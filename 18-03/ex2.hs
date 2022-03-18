@@ -18,3 +18,7 @@ Num(enumeraveis), Eq (comparaveis), Ord (ordenaveis)
 (/) = Fractional (double e float, "/" nao funciona com tipos inteiros)
 
 --}
+
+fatorial :: Integral a => a -> a
+fatorial 0 = 1
+fatorial n = n * fatorial (n-1)
