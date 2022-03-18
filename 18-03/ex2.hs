@@ -11,3 +11,10 @@ sobrecarga
 
 dividepoli :: Integral a => a -> a -> Bool
 dividepoli d n = n `rem` d == 0
+
+{--
+
+Num(enumeraveis), Eq (comparaveis), Ord (ordenaveis)
+(/) = Fractional (double e float, "/" nao funciona com tipos inteiros)
+
+--}
