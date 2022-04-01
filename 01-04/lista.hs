@@ -42,3 +42,17 @@ pairs xs = zip xs (tail xs)
 
 sortedd :: Ord a => [a] -> Bool
 sortedd xs = and [x <= y | (x,y) <- pairs xs]
+
+positionss :: Eq a => a -> [a] -> [Int]
+positionss x xs = [i | (x',i) <- zip xs [0..], x == x']
+
+
+count :: Char -> String -> Int
+count x xs = length [x' | x' <- xs, x == x']
+
+
+{--
+
+para cada,  condição
+
+--}
