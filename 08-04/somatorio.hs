@@ -18,5 +18,6 @@ produtorio (x:xs) = x * produtorio xs
 
 somatoriov2 :: Num a => [a] -> a
 somatoriov2 = foldr (+) 0 -- mesma coisa que linha 3, só que da direita para a esquerda (reduce em outras linguagens)
-
+--foldr = para lista vazia
+-- foldr1 = caso base não for lista vazia
 
