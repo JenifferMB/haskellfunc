@@ -56,3 +56,8 @@ count x xs = length [x' | x' <- xs, x == x']
 para cada,  condição
 
 --}
+
+produtorio :: Num a => [a] -> a
+produtorio [] = 1
+produtorio (x:xs) = x * produtorio xs
+
