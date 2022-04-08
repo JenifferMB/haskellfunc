@@ -15,3 +15,8 @@ somatorio 1:2:3:[]
 produtorio :: Num a => [a] -> a
 produtorio [] = 1
 produtorio (x:xs) = x * produtorio xs
+
+somatoriov2 :: Num a => [a] -> a
+somatoriov2 = foldr (+) 0 -- mesma coisa que linha 3, só que da direita para a esquerda (reduce em outras linguagens)
+
+
